@@ -7,7 +7,7 @@ interface Cocktail {
 const SpiritsData = {
   Vodka: {
     name: 'Vodka',
-    ingredients: [
+    cocktails: [
       { name: 'Cosmo' },
       { name: 'Moscow Mule' },
       { name: 'Vodka Tonic' },
@@ -16,7 +16,7 @@ const SpiritsData = {
   },
   Gin: {
     name: 'Gin',
-    ingredients: [
+    cocktails: [
       { name: 'Gin and Tonic' },
       { name: 'Flamingo' },
       { name: 'Queens Cocktail' },
@@ -25,7 +25,7 @@ const SpiritsData = {
   },
   Whiskey: {
     name: 'Whiskey',
-    ingredients: [
+    cocktails: [
       { name: 'Irish Rose' },
       { name: 'Old Fashioned' },
       { name: 'Queens Cocktail' },
@@ -34,7 +34,7 @@ const SpiritsData = {
   },
   Brandy: {
     name: 'Brandy',
-    ingredients: [
+    cocktails: [
       { name: 'Irish Rose' },
       { name: 'Old Fashioned' },
       { name: 'Queens Cocktail' },
@@ -43,7 +43,7 @@ const SpiritsData = {
   },
   Rum: {
     name: 'Rum',
-    ingredients: [
+    cocktails: [
       { name: 'Rum 1' },
       { name: 'Rum 2' },
       { name: 'Rum 3' },
