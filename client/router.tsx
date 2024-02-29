@@ -10,7 +10,7 @@ import Spirit from './components/Spirits'
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<App />}>
-      <Route path="/spirit/:id" element={<Spirit />} />
+      <Route path="/spirit/:spiritName" element={<Spirit />} />
     </Route>,
   ])
 )

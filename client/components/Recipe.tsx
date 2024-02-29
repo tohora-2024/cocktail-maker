@@ -1,17 +1,27 @@
-import React from 'react'
-import cocktails from '../data/cocktails-recipes.ts'
+import { Link, useParams } from 'react-router-dom'
+import * as cocktailData from '../data/cocktails-recipes.ts'
 
-function Recipe() {
-  const { name } = match.params
-  const cocktail = cocktails.find((cocktail) => cocktail.name === name)
+interface Recipe {
+  name: string
+  ingredients: string
+  instructions: string
+}
+
+function RecipeFunc() {
+  const params = useParams()
+  const spiritName = params.id
+  const specificRecipe = params.name
 
   return (
     <div>
-      <h2>{cocktail.name}</h2>
-      <p>Ingredients: {cocktail.ingredients}</p>
-      <p>Instructions: {cocktail.instructions}</p>
+      <p>Test!</p>
+      <ul>
+        {/* <li>{specificRecipe.name}</li>
+        <li>{recipe.ingredients}</li>
+        <li>{recipe.instructions}</li> */}
+      </ul>
     </div>
   )
 }
 
-export default Recipe
+export default RecipeFunc

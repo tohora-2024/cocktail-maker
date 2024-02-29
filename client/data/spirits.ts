@@ -1,16 +1,17 @@
 interface Cocktail {
   name: string
-  ingredients: string
-  instructions: string
 }
 
-interface SpiritProps {
+interface Spirit {
   spiritName: string
+  cocktails: Cocktail[]
 }
 
-const data = {
+export type SpiritData = Record<string, Spirit>
+
+const data: SpiritData = {
   Vodka: {
-    id: 'Vodka',
+    spiritName: 'Vodka',
     cocktails: [
       { name: 'Cosmo' },
       { name: 'Moscow Mule' },
@@ -19,7 +20,7 @@ const data = {
     ],
   },
   Gin: {
-    id: 'Gin',
+    spiritName: 'Gin',
     cocktails: [
       { name: 'Gin and Tonic' },
       { name: 'Flamingo' },
@@ -28,7 +29,7 @@ const data = {
     ],
   },
   Whiskey: {
-    id: 'Whiskey',
+    spiritName: 'Whiskey',
     cocktails: [
       { name: 'Irish Rose' },
       { name: 'Old Fashioned' },
@@ -37,7 +38,7 @@ const data = {
     ],
   },
   Brandy: {
-    id: 'Brandy',
+    spiritName: 'Brandy',
     cocktails: [
       { name: 'Irish Rose' },
       { name: 'Old Fashioned' },
@@ -46,7 +47,7 @@ const data = {
     ],
   },
   Rum: {
-    id: 'Rum',
+    spiritName: 'Rum',
     cocktails: [
       { name: 'Rum 1' },
       { name: 'Rum 2' },

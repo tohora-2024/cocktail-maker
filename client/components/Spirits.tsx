@@ -4,9 +4,11 @@ import data from '../data/spirits.ts'
 function Spirit() {
   const params = useParams()
   const spiritName = data[params.id as string]
-  const cocktails = data.return(
+  const cocktails = spiritName.cocktails
+
+  return (
     <div>
-      <h2>Cocktails with {spiritName}</h2>
+      <h2>Cocktails with</h2>
       <ul>
         {cocktails.map((cocktail) => (
           <li key={cocktail.name}>{cocktail.name}</li>
