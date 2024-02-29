@@ -23,6 +23,15 @@ const CocktailData = {
       { name: 'Trinity' },
     ],
   },
+  Whiskey: {
+    name: 'Whiskey',
+    ingredients: [{
+      { name: 'Irish Rose' },
+      { name: 'Old Fashioned' },
+      { name: 'Queens Cocktail' },
+      { name: 'Trinity' },
+    }]
+  }
 }
 
 export default CocktailData
