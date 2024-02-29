@@ -1,4 +1,4 @@
-import { vodka, gin, brandy, whiskey, rum } from '../data/spiritsdata.ts'
+// import { vodka, gin, brandy, whiskey, rum } from '../data/spiritsdata.ts'
 import { useParams } from 'react-router-dom'
 import * as data from '../data/spiritsdata.ts'
 import { Cocktail } from '../data/spiritsdata.ts'
