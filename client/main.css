@@ -1,5 +1,10 @@
 body {
-  background-color: #faf8f1;
-  color: #0a1520;
+  background-color: #a4f8e3;
+  color: #353230;
   font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2 {
+  color: rgb(230, 155, 112);
 }
