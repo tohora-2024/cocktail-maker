@@ -1,7 +1,7 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 // import SpiritsData from '../data/spirits'
 // import Nav from './Nav'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import * as data from '../data/spiritsdata.ts'
 
 const listSpirits = Object.keys(data).map((key) => ({
