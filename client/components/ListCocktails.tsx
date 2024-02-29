@@ -8,9 +8,13 @@ interface Props extends Cocktail {}
 const OneCocktail = (cocktail: Props) => {
   return (
     <div className="display">
-      <h3>{cocktail.name}</h3>
-      <p>Ingredients: {cocktail.ingredients}</p>
-      <p>Instructions: {cocktail.instructions}</p>
+      <h3 className="cocktail-name-heading">{cocktail.name}</h3>
+      <p className="cocktails-p">
+        <strong>Ingredients:</strong> {cocktail.ingredients}
+      </p>
+      <p className="cocktails-p">
+        <strong>Instructions:</strong> {cocktail.instructions}
+      </p>
     </div>
   )
 }
@@ -22,7 +26,7 @@ const ListCocktails = () => {
   }
   const cocktails = data[spirit as keyof typeof data]
   return (
-    <ul>
+    <ul className="ul">
       {cocktails.map((cocktail) => {
         return (
           <li key={cocktail.name}>

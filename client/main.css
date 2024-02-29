@@ -1,10 +1,35 @@
 body {
-  background-color: #a4f8e3;
+  background-color: beige;
   color: #353230;
   font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1,
 h2 {
-  color: rgb(230, 155, 112);
+  color: brown;
+}
+
+.spirit-button {
+  background-color: maroon;
+  margin: 3px;
+  color: white;
+  font-size: 1.2rem;
+  width: 90px;
+  border-radius: 10px;
+}
+
+.cocktail-name-heading {
+  color: brown;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.cocktails-p {
+  margin-top: 5px;
+}
+
+.ul {
+  list-style-type: none;
 }
