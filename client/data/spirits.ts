@@ -4,7 +4,7 @@ interface Cocktail {
   instructions: string
 }
 
-const CocktailData = {
+const SpiritsData = {
   Vodka: {
     name: 'Vodka',
     ingredients: [
@@ -25,23 +25,31 @@ const CocktailData = {
   },
   Whiskey: {
     name: 'Whiskey',
-    ingredients: [{
+    ingredients: [
       { name: 'Irish Rose' },
       { name: 'Old Fashioned' },
       { name: 'Queens Cocktail' },
       { name: 'Trinity' },
-    }]
-  }
+    ],
+  },
+  Brandy: {
+    name: 'Brandy',
+    ingredients: [
+      { name: 'Irish Rose' },
+      { name: 'Old Fashioned' },
+      { name: 'Queens Cocktail' },
+      { name: 'Trinity' },
+    ],
+  },
+  Rum: {
+    name: 'Rum',
+    ingredients: [
+      { name: 'Rum 1' },
+      { name: 'Rum 2' },
+      { name: 'Rum 3' },
+      { name: 'Rum 4' },
+    ],
+  },
 }
 
-export default CocktailData
-
-// Africa: {
-//   name: 'Africa',
-//   image: 'South-Africa.jpg',
-//   countries: [
-//     { code: 'AO', name: 'Angola' },
-//     { code: 'BF', name: 'Burkina Faso' },
-//     { code: 'BI', name: 'Burundi' },
-//     { code: 'BJ', name: 'Benin' },
-//     { code: 'BW', name: 'Botswana' },
+export default SpiritsData

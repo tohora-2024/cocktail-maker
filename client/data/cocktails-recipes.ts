@@ -45,5 +45,64 @@ export default [
     instructions:
       'Add them all to your shaker and shake, shake, shake. Serve with ice.',
   },
-  {},
+  {
+    name: 'Irish Rose',
+    ingredients: 'whiskey',
+    instructions: 'mix',
+  },
+  {
+    name: 'Old Fashioned',
+    ingredients: 'Whiskey',
+    instructions: 'make it taste gross and you got an old fashioned',
+  },
+  {
+    name: 'whiskey number 3',
+    ingredients: 'whiskey',
+    instructions: 'dont know yet',
+  },
+  {
+    name: 'whiskey number 4',
+    ingredients: 'whiskey',
+    instructions: 'dont know yet',
+  },
+  {
+    name: 'brandy 1',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'brandy 2',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'brandy 3',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'brandy 4',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'Rum 1',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'Rum 2',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'Rum 3',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
+  {
+    name: 'Rum 4',
+    ingredients: 'brandy',
+    instructions: 'mix',
+  },
 ]
