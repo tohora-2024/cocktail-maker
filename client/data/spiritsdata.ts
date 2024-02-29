@@ -6,7 +6,7 @@ export interface Cocktail {
 
 export const vodka: Cocktail[] = [
   {
-    name: 'Cosmo',
+    name: 'Cosmopolitan',
     ingredients: 'Vodka, lime juice, triple sec, cranberry juice',
     instructions:
       'Shake all the ingredients together with ice. Strain into a cocktail glass',
