@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import * as cocktailData from '../data/cocktails-recipes.ts'
+import cocktailData from '../data/cocktails-recipes.ts'
 
 interface Recipe {
   name: string
@@ -8,18 +8,24 @@ interface Recipe {
 }
 
 function RecipeFunc() {
-  const params = useParams()
+  const params = useParams<{ id: string; name: string }>()
   const spiritName = params.id
-  const specificRecipe = params.name
+  const specificRecipeName = params.name
+
+  const specificRecipe = cocktailData.find(
+    (recipe: Recipe) => recipe.name === specificRecipeName
+  )
 
   return (
     <div>
       <p>Test!</p>
-      <ul>
-        {/* <li>{specificRecipe.name}</li>
-        <li>{recipe.ingredients}</li>
-        <li>{recipe.instructions}</li> */}
-      </ul>
+      {specificRecipe && (
+        <ul>
+          <li>Name: {specificRecipe.name}</li>
+          <li>Ingredients: {specificRecipe.ingredients}</li>
+          <li>Instructions: {specificRecipe.instructions}</li>
+        </ul>
+      )}
     </div>
   )
 }
