@@ -5,7 +5,7 @@ import data from '../data/spirits.ts'
 function Spirits() {
   const params = useParams()
   const spiritName = data[params.id as string]
-  const cocktails = spiritName ? spiritName.cocktails : []
+  const cocktails = spiritName.cocktails
   // console.log(params, spiritName, cocktails)
   return (
     <div>
