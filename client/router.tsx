@@ -8,12 +8,12 @@ import App from './components/App'
 import ListCocktails from './components/ListCocktails'
 // import Spirits from './components/Spirits'
 
-const router = createBrowserRouter(
-  createRoutesFromElements([
-    <Route path="/" element={<App />}>
-      <Route path="/spirits/:spirit" element={<ListCocktails />} />
-    </Route>,
-  ])
-)
+export const routes = createRoutesFromElements([
+  <Route path="/" element={<App />}>
+    <Route path="/spirits/:spirit" element={<ListCocktails />} />
+  </Route>,
+])
+
+const router = createBrowserRouter(routes)
 
 export default router
