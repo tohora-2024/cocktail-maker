@@ -16,13 +16,19 @@ const RandomDrinkGenerator: React.FC = () => {
 
   return (
     <div className="random-drink-generator">
-      <h2>Generate a Random Drink</h2>
-      <button onClick={generateRandomDrink}>Generate</button>
+      <h3>Generate a Random Drink</h3>
+      <button className="generate-button" onClick={generateRandomDrink}>
+        Generate
+      </button>
       {randomDrink && (
         <div className="random-drink-details">
-          <h3>{randomDrink.name}</h3>
-          <p>Ingredients: {randomDrink.ingredients}</p>
-          <p>Instructions: {randomDrink.instructions}</p>
+          <h3 className="generate-h3">{randomDrink.name}</h3>
+          <p>
+            <strong>Ingredients:</strong> {randomDrink.ingredients}
+          </p>
+          <p>
+            <strong>Instructions:</strong> {randomDrink.instructions}
+          </p>
         </div>
       )}
     </div>
