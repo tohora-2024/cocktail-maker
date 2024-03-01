@@ -7,7 +7,8 @@ body {
   border-bottom: 2px solid maroon;
 }
 
-.spirit-button {
+.spirit-button,
+.generate-button {
   background-color: maroon;
   margin: 3px;
   color: white;
@@ -23,7 +24,8 @@ body {
 }
 
 .cocktail-name-heading,
-.app-heading {
+.app-heading,
+.generate-h3 {
   color: brown;
   text-decoration: underline;
   margin-bottom: 5px;

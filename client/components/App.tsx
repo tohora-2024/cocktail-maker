@@ -18,7 +18,7 @@ function App() {
         className="cocktail-glass-image"
       />
       <h1 className="app-heading">Let us Make Some Cocktails!</h1>
-      <p>Choose a spirit to see some cocktail recipes!</p>
+      <h3>Choose a spirit to see some cocktail recipes!</h3>
       <div className="spirits-container">
         {listSpirits.map((spirit) => (
           <Link key={spirit.name} to={`spirits/${spirit.name}`}>
