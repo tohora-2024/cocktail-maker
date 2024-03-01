@@ -1,0 +1,31 @@
+export const spirits = [
+  'Vodka',
+  'Gin',
+  'Rum',
+  'Tequila',
+  'Whiskey',
+  'Brandy',
+  'Liqueurs',
+  'Scotch',
+  'Absinthe',
+  'Bourbon',
+  'Mezcal',
+]
+
+export const mixers = [
+  'Coke',
+  'Tonic',
+  'Ginger Beer',
+  'Sparkling Duet',
+  'Apple Juice',
+  'Orange Juice',
+  'L&P',
+  'Fanta',
+  'Cranberry Juice',
+  'Lemonade',
+  'Redbull',
+  'V',
+  'Pineapple Juice',
+  'Icetea',
+  'Grapefruit Juice',
+]
