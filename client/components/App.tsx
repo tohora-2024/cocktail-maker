@@ -11,7 +11,7 @@ const listSpirits = Object.keys(data).map((key) => ({
 function App() {
   return (
     <div>
-      <h1>Let us Make Some Cocktails!</h1>
+      <h1 className="app-heading">Let us Make Some Cocktails!</h1>
       <p>Choose a spirit to see some cocktail recipes!</p>
       <div className="spirits-container">
         {listSpirits.map((spirit) => (
