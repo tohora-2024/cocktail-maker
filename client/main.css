@@ -12,7 +12,7 @@ body {
   margin: 3px;
   color: white;
   font-size: 1.2rem;
-  width: 90px;
+  width: 110px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
@@ -37,4 +37,20 @@ body {
 
 .ul {
   list-style-type: none;
+}
+
+.app-container {
+  position: relative;
+}
+.cocktail-glass-image {
+  position: absolute;
+  z-index: 999;
+  right: 20px;
+  height: 120px;
+  border: 6px ridge maroon;
+}
+
+.cocktail-glass-image:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
 }
