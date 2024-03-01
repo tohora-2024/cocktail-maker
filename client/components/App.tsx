@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app-container">
       <img
-        src="../public/cocktail-glasses.png"
+        src="../cocktail-glasses.png"
         alt="cocktail-glass"
         className="cocktail-glass-image"
       />
