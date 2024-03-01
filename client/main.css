@@ -1,5 +1,56 @@
 body {
-  background-color: #faf8f1;
-  color: #0a1520;
+  background-color: beige;
+  color: #353230;
   font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 2px solid maroon;
+}
+
+.spirit-button {
+  background-color: maroon;
+  margin: 3px;
+  color: white;
+  font-size: 1.2rem;
+  width: 110px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.spirit-button:hover {
+  transform: scale(1.2);
+}
+
+.cocktail-name-heading,
+.app-heading {
+  color: brown;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.cocktails-p {
+  margin-top: 5px;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.app-container {
+  position: relative;
+}
+.cocktail-glass-image {
+  position: absolute;
+  z-index: 999;
+  right: 20px;
+  height: 120px;
+  border: 6px ridge maroon;
+}
+
+.cocktail-glass-image:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
 }
