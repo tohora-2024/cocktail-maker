@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as spiritsData from '../data/spiritsdata'
+import * as spiritsData from '../data/spiritsDataRandom'
 import { Cocktail } from './interfaces'
 
 const RandomDrinkGenerator: React.FC = () => {
