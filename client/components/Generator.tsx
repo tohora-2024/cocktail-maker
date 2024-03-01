@@ -1,27 +1,32 @@
 import React, { useState } from 'react'
-import Display from './ListCocktails'
+import * as spiritsData from '../data/spiritsdata'
+import { Cocktail } from './interfaces'
 
-interface Cocktail {
-  name: string
-  ingredients: string[]
-  instructions: string
-}
+const RandomDrinkGenerator: React.FC = () => {
+  const [randomDrink, setRandomDrink] = useState<Cocktail | null>(null)
 
-const Generator: React.FC = () => {
-  const [currentCocktail, setCurrentCocktail] = useState<Cocktail | null>(null)
-  //https://stackoverflow.com/questions/59988667/typescript-react-fcprops-confusion
-  const generateRandomCocktail = () => {
-    const randomIndex = Math.floor(Math.random() * cocktails.length)
-    setCurrentCocktail(cocktails[randomIndex])
+  const generateRandomDrink = () => {
+    const entries = Object.entries(spiritsData)
+    const randomEntryIndex = Math.floor(Math.random() * entries.length)
+    const [randomSpirit, cocktails] = entries[randomEntryIndex]
+    const randomCocktailIndex = Math.floor(Math.random() * cocktails.length)
+    const randomCocktail = cocktails[randomCocktailIndex]
+    setRandomDrink(randomCocktail)
   }
 
   return (
-    <div className="generator">
-      <h2>Generate Cocktail</h2>
-      <button onClick={generateRandomCocktail}>Generate</button>
-      {currentCocktail && <Display cocktail={currentCocktail} />}
+    <div className="random-drink-generator">
+      <h2>Generate a Random Drink</h2>
+      <button onClick={generateRandomDrink}>Generate</button>
+      {randomDrink && (
+        <div className="random-drink-details">
+          <h3>{randomDrink.name}</h3>
+          <p>Ingredients: {randomDrink.ingredients}</p>
+          <p>Instructions: {randomDrink.instructions}</p>
+        </div>
+      )}
     </div>
   )
 }
 
-export default Generator
+export default RandomDrinkGenerator
